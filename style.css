@@ -1,0 +1,399 @@
+
+* {
+    box-sizing: border-box;
+    /* height: 0;
+    width: 0; */
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #f7fafc;
+}
+
+main {
+    border: 1px solid green;
+}
+
+nav {
+    display: flex;
+    /* flex-direction: column;
+    justify-content: center; */
+    /* height: 20.8rem;
+    margin-top: -14vh; */
+    list-style: none;
+}
+  
+.header {
+    /* border: 1px solid #b6b8ba; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.name {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 200;
+    font-size: 64px;
+    color: #22A4B7;
+    display: inline-block;
+    margin: 0 15px;
+    width: 40%;
+    text-shadow: -3px -1px rgba(58, 171, 196, 0.276);
+}
+
+  .nav-links {
+    width: 20%;
+    top: 0;
+    display: flex; 
+    justify-content: space-between;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-right: 38px;
+  }
+
+  .home-button {
+    margin: 8px;
+  }
+
+  .home-button:hover {
+    transform: rotateY(180deg);
+    animation: two 2s infinite;
+    animation-direction: alternate;
+  }
+
+  .resume-button {
+    margin-top: 8px;
+  }
+
+  .resume-button:hover {
+    transform: rotateY(180deg);
+    animation: two 2s infinite;
+    animation-direction: alternate;
+  }
+
+  .contact-button {
+    margin-top: 8px;
+  }
+
+  .contact-button:hover {
+    transform: rotateY(180deg);
+    animation: two 2s infinite;
+    animation-direction: alternate;
+  }
+
+
+  /* .home-button:hover ~ hr {
+    margin-left: 25%;
+    margin-top: 30px;
+    padding: 2px;
+  }
+  
+  .resume-button:hover ~ hr {
+    margin-left: 50%;
+    margin-top: 30px;
+    padding: 2px;
+  }
+  
+  .contact-button:hover ~ hr {
+    margin-left: 75%;
+    margin-top: 30px;
+    padding: 2px;
+    /* margin-right: 15px; 
+  }*/
+  
+  hr {
+    height: .25rem;
+    width: 25%;
+    margin: 0;
+    background: tomato;
+    border: none;
+    transition: .3s ease-in-out;
+  }
+
+  a {
+    text-decoration: none;
+    color: #b6b8ba;
+  } 
+
+  a:hover {
+      color: #ffb238;
+  }
+
+  a:active {
+      color: #ffd38e;
+  }
+
+  a:after {
+    color: #ffd38e;
+  } 
+
+.bio-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    height: 60%;
+    width: 40%;
+    border-right: 1px solid #ffb338cd;
+
+}
+
+.hey {
+    justify-content: center;
+    align-items: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 42px;
+    font-weight: 200;
+    padding-bottom: 2px;
+}
+
+.about1 {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    padding-top: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 19px;
+
+}
+
+.about2 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    padding-top: 10px;
+    padding: 15px;
+
+}
+
+.about3 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+}
+
+.fa {
+    font-size: 50px;
+}
+
+.fa-linkedin {
+    padding: 10px;
+    /*  */
+}
+
+.fa-github{
+    font-size: 40px;
+    /* margin: 15px; */
+    padding: 10px;
+}
+
+.fa-linkedin:hover {
+    color: #ffb238;
+}
+
+.fa-linkedin:active {
+    color: #ffd38e;
+}
+
+.fa-github:hover {
+    color: #ffb238;
+}
+
+.fa-github:active {
+    color: #ffd38e;
+}
+
+.contact-logos {
+    margin-top: 0;
+    padding: 0;
+}
+
+.contact-form {
+    width: 425px;
+    box-shadow: 0px 0px 41px 1px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 100px auto;
+    padding: 20px;
+}
+
+.contact-title {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.phone {
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+}
+
+.email {
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+}
+
+.icons {
+    margin: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 45px;
+    color: #ffb238;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #b6b8ba;
+    text-align: center;
+    margin-right: 2px;
+    margin-left: 2px;
+    font-size: 10px;
+}
+
+.footer-text {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12px;
+}
+
+
+
+
+
+
+/*MOBILE STYLING HERE*/
+@media screen and (max-width: 600px) {
+
+.header {
+    border: none;
+    margin: 5px 5px;
+    display: flex:
+    flex-direction: column;
+}
+
+.name {
+    /* margin-left: 0; */
+    padding-top: 5px;
+    margin-top: 5px;
+    font-size: 40px;
+    width: 50%;
+}
+
+.nav-links {
+    border: 1px solid #ffb238;
+    flex-direction: column;
+}
+
+.home-button {
+    margin: 0;
+  }
+
+  .resume-button {
+    margin-top: 8px;
+  }
+
+  .contact-button {
+    margin-top: 8px;
+  }
+
+.bio-main {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin: 0 auto; */
+    top: -15px;
+    /* height: 80%; */
+    width: 80%;
+}
+
+.hey {
+    padding-bottom: 15px;
+    /* top: -10px; */
+    font-size: 40px;
+    font-weight: 200;
+    margin-bottom: 0;
+}
+
+.about1 {
+    border-left: 1px solid #b6b8ba;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.about2 {
+    font-family: 'Inconsolata', monospace;
+    border-right: 1px solid #b6b8ba;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 0;
+    padding-right: 10px;
+}
+
+.about3 {
+    font-family: 'Inconsolata', monospace;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    padding-right: 10px;
+} 
+
+
+.contact-logos {
+    margin-top: 0;
+    padding: 0;
+}
+
+.footer {
+    margin-right: 2px;
+    margin-left: 2px;
+    font-size: 10px;
+}
+
+.contact-form {
+    width: 375px;
+    box-shadow: 0px 0px 41px 1px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 100px auto;
+    padding: 20px;
+}
+
+.contact-title {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+}
+
+.phone {
+    font-family: 'Inconsolata', monospace;
+}
+
+.email {
+    font-family: 'Inconsolata', monospace;
+}
+
+.icons {
+    margin-top: -60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; 
+}
