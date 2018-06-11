@@ -1,4 +1,4 @@
-
+/*DESKTOP STYLING*/
 * {
     box-sizing: border-box;
 }
@@ -16,6 +16,7 @@ main {
 nav {
     display: flex;
     list-style: none;
+    flex-direction: row;
 }
   
 .header {
@@ -202,7 +203,7 @@ nav {
     align-items: center;
     padding: 15px;
     padding-top: 0;
-    margin-top: 0;
+    margin-top: 25px;
     margin-bottom: 40px;
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 24px;
@@ -211,11 +212,13 @@ nav {
 .about2 {
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
+    margin-top: 30px;
     padding-top: 60px;
     padding-bottom: -15px;
 }
 
 .about3 {
+    margin-top: 0;
     font-family: 'Work Sans', sans-serif;
     font-size: 14px;
 }
@@ -313,20 +316,17 @@ nav {
 
 
 
-
-
 /*MOBILE STYLING HERE*/
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
 
 .header {
     border: none;
     margin: 5px 5px;
-    display: flex:
+    display: flex;
     flex-direction: column;
 }
 
 .name {
-    /* margin-left: 0; */
     padding-top: 5px;
     margin-top: 5px;
     font-size: 40px;
@@ -342,11 +342,11 @@ nav {
     margin: 0;
   }
 
-  .resume-button {
+.resume-button {
     margin-top: 8px;
   }
 
-  .contact-button {
+.contact-button {
     margin-top: 8px;
   }
 
@@ -356,12 +356,11 @@ nav {
     flex-direction: column;
     top: -15px;
     width: 80%;
-    /* font-size: 18px; */
+    
 }
 
 .hey {
     padding-bottom: 15px;
-    /* top: -10px; */
     font-size: 40px;
     font-weight: 200;
     margin-bottom: 0;
@@ -372,7 +371,7 @@ nav {
     border-left: 1px solid #29e79c;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 15px;
     padding: 10px;
     padding-right: 10px;
@@ -382,7 +381,7 @@ nav {
     font-family: 'Inconsolata', monospace;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 14px;
     margin: 0;
     padding-top: 0;
     padding-right: 10px;
@@ -392,9 +391,8 @@ nav {
     font-family: 'Inconsolata', monospace;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 14px;
 } 
-
 
 .contact-logos {
     margin-top: 0;
@@ -437,4 +435,5 @@ nav {
     justify-content: center;
     align-items: center;
     font-size: 24px; 
+}
 }
